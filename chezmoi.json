@@ -1,0 +1,18 @@
+{
+  "version": "",
+  "url": "",
+  "dl_type": "tar.gz",
+  "bin": [
+    [
+      "chezmoi",
+      "chezmoi"
+    ]
+  ],
+  "checkver": {
+    "url": "https://github.com/twpayne/chezmoi/releases/latest",
+    "regex": "/releases/tag/(?:v|V)?([\\d.]+)"
+  },
+  "autoupdate": {
+    "url": "https://github.com/twpayne/chezmoi/releases/download/v${version}/chezmoi_${version}_linux_amd64.tar.gz"
+  }
+}

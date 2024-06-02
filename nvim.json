@@ -1,0 +1,18 @@
+{
+  "version": "",
+  "url": "",
+  "dl_type": "plain",
+  "bin": [
+    [
+      "nvim.appimage",
+      "nvim.appimage"
+    ]
+  ],
+  "checkver": {
+    "url": "https://github.com/neovim/neovim-releases/releases/latest",
+    "regex": "/releases/tag/(?:v|V)?([\\d.]+)"
+  },
+  "autoupdate": {
+    "url": "https://github.com/neovim/neovim-releases/releases/download/v${version}/nvim.appimage"
+  }
+}
